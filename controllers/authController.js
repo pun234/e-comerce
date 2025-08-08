@@ -19,7 +19,7 @@ export const sendOtpController = async (req, res) => {
       subject: "Your OTP for DoorCart",
       html: `<h1>Your One-Time Password is: ${otp}</h1>`,
     });
-    // re_NWTw5HYN_DiUtqhYDgCA5CbVLQbFHVCow
+
     res.status(200).send({ success: true, message: "OTP sent to your email" });
   } catch (error) {
     console.log(error);
