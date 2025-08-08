@@ -9,8 +9,8 @@ import {
   Register,
   testControl,
   updateProfileController,
-  sendOtpController, // New
-  verifyOtpController, // New
+  sendOtpController, 
+  verifyOtpController, 
 } from "../controllers/authController.js";
 
 const router = express.Router();
@@ -18,8 +18,8 @@ const router = express.Router();
 // Routes
 router.post("/register", Register);
 router.post("/login", Login);
-router.post("/send-otp", sendOtpController); // New
-router.post("/verify-otp", verifyOtpController); // New
+router.post("/send-otp", sendOtpController); 
+router.post("/verify-otp", verifyOtpController); 
 router.post("/forget-password", forgetPasswordcontrol);
 
 // Protected routes
